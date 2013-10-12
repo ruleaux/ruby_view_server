@@ -1,5 +1,8 @@
 require 'erb'
+bookList = ["brothers karamazov",
+			"east of eden",
+			"heart of darkness"]
+x = bookList.collect{ |b| b.upcase} 
 
-x = 42
-template = ERB.new "The value of x is: <%= x %>"
+template = ERB.new "upcase test 2: <%= x %>"
 puts template.result(binding)
