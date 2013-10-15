@@ -2,12 +2,21 @@
 <p>
   The time is now:
   <%= Time.now %>
+
+<h2> Please select</h2>
+<form>
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+</form> 
+
+
 </p>
 
 <p>
   <ul>
       <% ['Red', 'Orange', 'Blue'].each do |p| %>
         <li>I like this color: <%= p %></li>
+        <%= Time.now %>
       <% end %>
     </ul>
 
