@@ -5,7 +5,11 @@
 </p>
 
 <p>
-  My Name is:
-  <%= @name %>
+  <ul>
+      <% ['Red', 'Orange', 'Blue'].each do |p| %>
+        <li>I like to use these colors: <%= p %></li>
+      <% end %>
+    </ul>
+
 </p>
 
